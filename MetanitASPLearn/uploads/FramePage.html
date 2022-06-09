@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <center><h1>Page with frame</h1></center>
+
+    <div>
+        <form method="get">
+            <fieldset>
+                <legend>Enter data</legend>
+                <p><input type="email" name="login" title="Email" autocomplete="off" placeholder="Email" size="25" required /></p>
+                <p><input type="password" name="password" autocomplete="off" placeholder="Password" maxlength="12" min="6" size="12" required /></p>
+                <p><input type="submit" value="Submit" /></p>
+                <p><input type="text" name="company" disabled value="Underfined company" /></p>
+                <p><button type="reset" name="resetButton" value="Reset"><i>Reset</i></button></p>               
+                <br />
+                <label for="description"><b>Description</b></label>
+                <br />
+                <textarea id="description" autofocus cols="100" rows="3" placeholder="Write here description"></textarea>
+            </fieldset>            
+        </form>
+        <form>
+            <p><input list="operatingSystem" type="text" placeholder="Choose your OS" name="operatingSystem" /></p>
+        </form>
+        <datalist id="operatingSystem">
+            <option value="Windows" />
+            <option value="MAC OS" />
+            <option value="Unix" />
+            <option value="Linux" />
+        </datalist>
+        <br />
+        <br />
+        <input type="search" placeholder="Find anything" />
+        <button type="submit">Search</button>
+    </div>
+    <br />
+
+    <div>
+        <fieldset>
+            <legend>Contacts</legend>
+            <label for="ages">Age</label>
+            <input id="ages" type="number" max="130" min="18" step="1" value="18" />
+            <br />
+            <label for="salary">What do you want to have a salary?</label>
+            <input id="salary" type="range" />
+            <br />
+            <label for="phoneNumber">Phone number</label>
+            <input id="phoneNumber" type="tel" placeholder="+XXX-XX-XXX-XX-XX" name="phone" pattern="\+\d{3}-\d{2}-d{3}-\d{2}\d{2}" required />
+        </fieldset>
+        
+        <br />
+        <br />
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                <input id="gender" type="radio" name="gender" />Woman
+            </p>
+            <p>
+                <input id="gender" type="radio" name="gender" />Man
+            </p>
+            <p>
+                <input id="gender" type="radio" name="gender" />None
+            </p>
+        </fieldset>        
+        <br />
+        <fieldset>
+            <legend>Languages</legend>
+            <p>
+                <input id="language" type="checkbox" name="programming" />HTML&CSS
+            </p>
+            <p>
+                <input id="language" type="checkbox" name="programming" />JavaScript
+            </p>
+            <p>
+                <input id="language" type="checkbox" name="programming" />Java
+            </p>
+            <p>
+                <input id="language" type="checkbox" name="programming" />C#
+            </p>
+            <p>
+                <input id="language" type="checkbox" name="programming" />Kotlin
+            </p>
+            <p>
+                <input id="language" type="checkbox" name="programming" />C++
+            </p>
+            <p>
+                <input id="language" type="checkbox" name="programming" />Python
+            </p>
+            <p>
+                <input id="language" type="checkbox" name="programming" />Go
+            </p>
+            <p>
+                <input id="language" type="checkbox" name="programming" />Swift
+            </p>
+            <p>
+                <input id="language" type="checkbox" name="programming" />SQL
+            </p>
+            <p>
+                <input id="language" type="checkbox" name="programming" />Rust
+            </p>
+            <p>
+                <input id="language" type="checkbox" name="programming" />F#
+            </p>
+        </fieldset>
+        <br />
+    </div>
+    <div>
+        <select id="transport" name="transport" multiple>
+            <optgroup label="Lorry">
+                <option value="tow truck">Tow truck</option>
+                <option value="cement truck">Cement truck</option>
+                <option value="tractor trailer">Tractor trailer</option>
+            </optgroup>
+            <optgroup label="Car">
+                <option value="micro" selected>Micro</option>
+                <option value="matchback">Matchback</option>
+                <option value="crossover">Crossover</option>
+            </optgroup>
+            <optgroup label="Bus">
+                <option name="type a">Type A</option>
+                <option name="type b">Type B</option>
+                <option name="type c">Type C</option>
+            </optgroup>
+        </select>
+        <input type="submit" value="Submit transport"/>
+    </div>
+
+</body>
+</html>
